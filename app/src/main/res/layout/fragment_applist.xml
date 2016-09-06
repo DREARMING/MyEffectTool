@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/applist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_6">
+        <TextView
+            android:id="@id/freeRom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dp_14"
+            android:text="手机内存剩余："/>
+        <TextView
+            android:id="@id/freeSd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/dp_14"
+            android:text="Sd卡剩余："/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/fragment_applist_recycleview"
+        android:layout_below="@id/applist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

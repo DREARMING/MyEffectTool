@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ProgressBar
+        android:id="@id/process_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <!--<RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="音乐收藏" />
+
+        <TextView
+            android:id="@+id/right_tv"
+            android:textColor="#990000ff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="编辑" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black" />
+    </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar"
+        android:padding="@dimen/dp_10"
+
+        android:background="@color/colorAlphaGray"
+        android:layout_marginBottom="@dimen/dp_10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="进程管理"
+            android:textSize="@dimen/dp_18"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/process_free_space"
+        android:layout_below="@id/titleBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_6">
+        <TextView
+            android:id="@id/process_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="进程: "/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_18">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余/总内存: "
+            />
+
+        <TextView
+            android:id="@id/process_free_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@id/process_total_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@id/rcv_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/process_free_space"
+        />
+
+    <RelativeLayout
+        android:id="@id/process_clear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAlphaGray"
+        >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+<!--        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                 android:layout_width="@dimen/dp_icon"
+                 android:layout_height="@dimen/dp_icon"
+                 android:src="@mipmap/cha"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_14"
+                android:text="clean"/>
+
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@id/process_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_4"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <ImageView
+                 android:layout_width="@dimen/dp_icon"
+                 android:layout_height="@dimen/dp_icon"
+                 android:src="@mipmap/rubblish"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp_14"
+                android:text="clean"/>
+
+        </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/process_cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar"
+        android:visibility="gone"
+        android:background="@color/colorAlphaGray"
+        >
+
+        <Button
+            android:layout_marginTop="@dimen/dp_30"
+            android:id="@id/process_cancel"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_background"
+            android:text="取消"/>
+
+        <Button
+            android:id="@id/process_all_select"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="全选"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_background_blue"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorGray" />
+    </RelativeLayout>
+</RelativeLayout>

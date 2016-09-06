@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyEffectTools</string>
+    <string name="description">Auto Reply The Wechat Message</string>
+    <string name="LuckyMoneyDes">Auto Rob The Lucky Money</string>
+    <string name="wechat_helper_id">WECHAT_ID</string>
+    <string name="wechat_helper">微信助手</string>
+    <string name="auto_reply">AutoReply</string>
+    <string name="auto_reply_title">微信自动回复</string>
+    <string name="summary_on">已开启</string>
+    <string name="summary_off">未开启</string>
+
+    <string name="auto_reply_lable">Auto wechat reply</string>
+    <string name="auto_lucky_money_lable">AutoRobLuckyMoney</string>
+    <string name="auto_content">AutoContent</string>
+    <string name="auto_reply_content">在敲代码，稍后回复你...</string>
+    <string name="reply_title">设置回复内容</string>
+
+
+    <string name="auto_red_pakage">AutoRedPackage</string>
+    <string name="auto_red_pakage_title">后台自动抢红包</string>
+
+    <string name="lock">Lock</string>
+    <string name="keys">keys</string>
+    <string name="lock_title">程序锁</string>
+    <string name="lock_password">更改密码</string>
+
+    <string name="lock_tip">绘制您的解锁图案</string>
+    <string name="Lock_Process">MonitorService</string>
+</resources>
