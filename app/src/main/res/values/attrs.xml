@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="normalPoint" format="integer|reference" />
+    <attr name="pressedPoint" format="integer|reference" />
+    <attr name="errorPoint" format="integer|reference" />
+    <attr name="pressedLine" format="integer|reference" />
+    <attr name="errorLine" format="integer|reference" />
+
+    <declare-styleable name="LockView">
+        <attr name="normalPoint" />
+        <attr name="pressedPoint" />
+        <attr name="errorPoint" />
+        <attr name="pressedLine" />
+        <attr name="errorLine" />
+    </declare-styleable>
+</resources>

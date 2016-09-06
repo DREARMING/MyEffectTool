@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="通用设置">
+
+        <SwitchPreference
+            android:key="NotificationBar"
+            android:title="通知栏"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="@string/wechat_helper_id"
+        android:title="@string/wechat_helper">
+
+    <SwitchPreference
+        android:key="@string/auto_reply"
+        android:defaultValue="false"
+        android:title="@string/auto_reply_title"
+        android:summaryOn="@string/summary_on"
+        android:summaryOff="@string/summary_off"
+        android:persistent="true"></SwitchPreference>
+
+        <EditTextPreference
+            android:key="@string/auto_content"
+            android:title="@string/reply_title"
+            android:dependency="@string/auto_reply"
+            android:defaultValue="@string/auto_reply_content"
+            android:persistent="true"/>
+
+    <SwitchPreference
+        android:key="@string/auto_red_pakage"
+        android:title="@string/auto_red_pakage_title"
+        android:defaultValue="false"
+        android:summaryOn="@string/summary_on"
+        android:summaryOff="@string/summary_off"
+        android:persistent="true"></SwitchPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="程序锁">
+        <SwitchPreference
+            android:key="@string/lock"
+            android:title="@string/lock_title"
+            android:summaryOn="@string/summary_on"
+            android:summaryOff="@string/summary_off"
+            android:defaultValue="false"
+            android:persistent="true"/>
+
+        <SwitchPreference
+            android:key="@string/keys"
+            android:title="解锁一次就不用再解锁"
+            android:dependency="@string/lock"
+            android:defaultValue="false"
+            android:persistent="true"/>
+
+        <Preference
+            android:key="@string/auto_content"
+            android:title="@string/lock_password"
+            android:dependency="@string/lock">
+            <intent
+                android:targetClass="com.mvp.myeffecttools.activities.LockActivity"
+                android:targetPackage="com.mvp.myeffecttools"
+                android:action="com.mvp.changepassword">
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

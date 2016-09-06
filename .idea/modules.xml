@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyEffectTools.iml" filepath="$PROJECT_DIR$/MyEffectTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RootTools/RootTools.iml" filepath="$PROJECT_DIR$/RootTools/RootTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mygenerator/mygenerator.iml" filepath="$PROJECT_DIR$/mygenerator/mygenerator.iml" />
+    </modules>
+  </component>
+</project>

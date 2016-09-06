@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'org.greenrobot:greendao-generator:3.1.0'
+    compile 'org.greenrobot:greendao-api:3.1.1'
+}

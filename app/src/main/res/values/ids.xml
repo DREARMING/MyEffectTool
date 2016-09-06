@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="AppManagerLRecycleView" type="id"/>
+    <item name="header_recycleview" type="id"/>
+    <item name="item_app_drawable" type="id"/>
+    <item name="item_app_name" type="id"/>
+    <item name="item_app_type" type="id"/>
+    <item name="item_app_size" type="id"/>
+    <item name="container_apps_fragment" type="id"/>
+    <item name="head_view_title" type="id"/>
+    <item name="fragment_applist_progressbar" type="id"/>
+    <item name="fragment_applist_recycleview" type="id"/>
+    <item name="freeRom" type="id"/>
+    <item name="freeSd" type="id"/>
+    <item name="process_clear" type="id"/>
+    <item name="process_cancel" type="id"/>
+    <item name="process_clear_layout" type="id"/>
+    <item name="rcv_root" type="id"/>
+    <item name="process_cancel_layout" type="id"/>
+    <item name="titleBar" type="id"/>
+    <item name="process_progress_bar" type="id"/>
+    <item name="process_free_space" type="id"/>
+    <item name="process_num" type="id"/>
+    <item name="process_free_ram" type="id"/>
+    <item name="process_total_ram" type="id"/>
+    <item name="lockview" type="id"/>
+    <item name="layout_setting" type="id"/>
+    <item name="lock_picture" type="id"/>
+    <item name="item_lockapp" type="id"/>
+
+    <item name="lock_progressbar" type="id"/>
+    <item name="lock_recyclerview" type="id"/>
+    <item name="lock_num_tv" type="id"/>
+    <item name="process_all_select" type="id"/>
+
+
+</resources>
