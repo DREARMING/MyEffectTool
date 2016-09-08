@@ -4,12 +4,20 @@
 
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+=======
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+>>>>>>> github/master
 
     <application
         android:allowBackup="true"
@@ -20,11 +28,16 @@
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> github/master
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".activities.ApplicationActivity" />
         <activity android:name=".activities.ProcessesActivity" />
+<<<<<<< HEAD
         <activity
             android:name=".activities.LockActivity"
             android:excludeFromRecents="true"
@@ -38,32 +51,62 @@
             android:name=".services.AutoReplyMMService"
             android:enabled="true"
             android:exported="true"
+=======
+        <activity android:name=".activities.LockActivity"
+            android:taskAffinity="com.mvp.lockTask"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" />
+        <activity android:name=".activities.SettingActivity" />
+        <activity android:name=".activities.LockAppsActivity"></activity>
+        <service android:name=".services.MonitorService">
+        </service>
+
+        <service android:name="com.mvp.myeffecttools.services.AutoReplyMMService"
+            android:exported="true"
+            android:enabled="true"
+>>>>>>> github/master
             android:label="@string/auto_reply_lable"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
+<<<<<<< HEAD
 
+=======
+>>>>>>> github/master
             <meta-data
                 android:name="android.accessibilityservice"
                 android:resource="@xml/service_config" />
         </service>
+<<<<<<< HEAD
         <service
             android:name=".services.RobLuckyMoneyMMService"
             android:enabled="true"
             android:exported="true"
+=======
+
+        <service android:name="com.mvp.myeffecttools.services.RobLuckyMoneyMMService"
+            android:exported="true"
+            android:enabled="true"
+>>>>>>> github/master
             android:label="@string/auto_lucky_money_lable"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
             </intent-filter>
+<<<<<<< HEAD
 
+=======
+>>>>>>> github/master
             <meta-data
                 android:name="android.accessibilityservice"
                 android:resource="@xml/auto_rob_money_service_config" />
         </service>
+<<<<<<< HEAD
 
         <activity android:name=".activities.SpashActivity"></activity>
+=======
+>>>>>>> github/master
     </application>
 
 </manifest>

@@ -7,7 +7,11 @@ android {
     buildToolsVersion "24.0.0"
     defaultConfig {
         applicationId "com.mvp.myeffecttools"
+<<<<<<< HEAD
         minSdkVersion 16
+=======
+        minSdkVersion 15
+>>>>>>> github/master
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -27,6 +31,9 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:24.1.1'
     compile project(':RootTools')
     compile 'org.greenrobot:greendao:3.1.1'
+<<<<<<< HEAD
     compile 'com.google.code.gson:gson:2.7'
     compile 'org.xutils:xutils:3.3.36'
+=======
+>>>>>>> github/master
 }

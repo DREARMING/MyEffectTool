@@ -1,12 +1,16 @@
 package com.mvp.myeffecttools.activities;
 
+<<<<<<< HEAD
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+=======
+>>>>>>> github/master
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+<<<<<<< HEAD
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -69,6 +73,19 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
+=======
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Toast;
+
+import com.mvp.myeffecttools.R;
+public class MainActivity extends AppCompatActivity {
+
+    private Context mContext;
+>>>>>>> github/master
     private SharedPreferences mPrefs;
 
     @Override
@@ -76,9 +93,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mContext = this;
+<<<<<<< HEAD
         x.Ext.init(getApplication());
         setTitle("进程管理");
         CheckVersion();
+=======
+        setTitle("进程管理");
+>>>>>>> github/master
     }
 
     public void clickApplication(View view){
@@ -129,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
         intent.setClass(this,SettingActivity.class);
         startActivity(intent);
     }
+<<<<<<< HEAD
 
     private void showDialog() {
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(mContext);
@@ -274,4 +296,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+=======
+>>>>>>> github/master
 }

@@ -1,9 +1,20 @@
 package com.mvp.myeffecttools.adapter;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.support.v7.widget.RecyclerView;
 import android.text.format.Formatter;
 import android.view.LayoutInflater;
+=======
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.os.SystemClock;
+import android.support.v7.widget.RecyclerView;
+import android.text.format.Formatter;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
+>>>>>>> github/master
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
@@ -119,6 +130,14 @@ public class SlideAdapter extends RecyclerView.Adapter implements OnItemSwipe{
         for (ItemBean item:mItemBeans) {
             item.setChecked(false);
         }
+<<<<<<< HEAD
+=======
+
+        for(SlideViewHolder holder:mSlideViewHolders){
+            holder.setCheck(false);
+            holder.clearViewChange();
+        }
+>>>>>>> github/master
     }
 
     public void setItemBeans(List<ItemBean> beans) {
