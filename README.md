@@ -80,3 +80,10 @@
 >对软件进行管理，可以实现卸载，查看应用详细设置，启动的功能！并且用装饰者模式为ReyclerView添加HeadView，以用来区分开系统应用和第三方应用
 
 ![](http://i.imgur.com/Ls3JITU.gif)
+
+
+###XUtils下载更新包，并且在通知栏显示进度条,点击安装
+
+>效果图：
+
+![](http://i.imgur.com/2eId5E8.gif)
