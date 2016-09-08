@@ -2,11 +2,10 @@ package com.mvp.myeffecttools.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -16,7 +15,6 @@ import com.mvp.myeffecttools.R;
 import com.mvp.myeffecttools.interfaces.OnLockViewFinish;
 import com.mvp.myeffecttools.views.LockView;
 
-import java.net.URI;
 import java.util.List;
 
 public class LockActivity extends AppCompatActivity {
@@ -116,10 +114,7 @@ public class LockActivity extends AppCompatActivity {
 
     private boolean hasPassword(){
         String savePassword = mPref.getString("password",null);
-        if(savePassword == null){
-            return false;
-        }
-        return true;
+        return savePassword != null;
     }
 
     private boolean isChangePassword(){
