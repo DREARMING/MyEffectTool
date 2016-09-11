@@ -84,6 +84,8 @@
 
 ###XUtils下载更新包，并且在通知栏显示进度条,点击安装
 
+>用MVP架构，和Intentservice实现下载服务
+
 >效果图：
 
 ![](http://i.imgur.com/2eId5E8.gif)
